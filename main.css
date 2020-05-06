@@ -18,7 +18,6 @@ body {
 .text {
   margin-right: 1.1vw;
   font-size: 7.6vh;
-  color: #0a2110;
 }
 .pulse {
   animation-duration: 0.8s;
@@ -38,4 +37,14 @@ body {
   to {
     color: #0a2110;
   }
+}
+.text {
+  color: #0a2110;
+  
+  transition: all 10s;
+}
+.text:hover {
+  color: #8f3131;
+
+  transition: all 0.1s;
 }
