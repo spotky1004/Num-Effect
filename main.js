@@ -21,7 +21,7 @@ $(function (){
             return numbers[i*29+lS];
           });
           $('#l' + i + '> .text:nth-child(' + (lS+1) + ')').addClass('pulse');
-        }, 10);
+        }, 50);
       }, 50*i);
     }
     setInterval( function (){
