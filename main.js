@@ -12,7 +12,7 @@ $(function (){
     $('.text').html(function (index,html) {
       return numbers[index];
     });
-    function pulseTrigger(i, lS) {
+    function pulseTrigger(i, lS, t) {
       setTimeout(function(){
         numbers[i*29+lS] = Math.floor(Math.random()*10);
         $('#l' + i + '> .text:nth-child(' + (lS+1) + ')').removeClass('pulse');
@@ -22,12 +22,13 @@ $(function (){
           });
           $('#l' + i + '> .text:nth-child(' + (lS+1) + ')').addClass('pulse');
         }, 50);
-      }, 50*i);
+      }, t*i);
     }
     setInterval( function (){
       lineStart = Math.floor(Math.random()*29);
+      tick = Math.floor(Math.random()*100)+5;
       for (var i = 1; i < 11; i++) {
-        pulseTrigger(i, lineStart);
+        pulseTrigger(i, lineStart, tick);
       }
     }, 100);
   }, 750);
