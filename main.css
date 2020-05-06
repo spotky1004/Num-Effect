@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  overflow: hidden;
+  user-select: none;
+}
+body {
+  background-color: black;
+
+}
+#warpAll {
+  text-align: center;
+}
+.line {
+  white-space: nowrap;
+}
+.text {
+  margin-right: 1.1vw;
+  font-size: 7.6vh;
+  color: #0a2110;
+}
+.pulse {
+  animation-duration: 0.8s;
+  animation-name: pulseAnimation;
+  animation-iteration-count: 1;
+}
+@keyframes pulseAnimation {
+  from {
+    color: #0a2110;
+  }
+  1% {
+    color: #318f45;
+  }
+  20% {
+    color: #5bde7e;
+  }
+  to {
+    color: #0a2110;
+  }
+}
